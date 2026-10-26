@@ -16,7 +16,7 @@ function App() {
     setError('')
 
     try {
-      const response = await fetch('http://localhost:5000/api/recipe', {
+      const response = await fetch('https://ai-recipe-api-jkr8.onrender.com/api/recipe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ingredients })
